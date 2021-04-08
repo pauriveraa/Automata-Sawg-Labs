@@ -1,0 +1,18 @@
+
+S
+java:S1128"6Remove this unused import 'io.cucumber.java.en.Given'.(™©°ò8úÏƒùŠ/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(»æ§ò8Øèƒ‹/
+K
+java:S2140!")Use "java.util.Random.nextInt()" instead.(£ù½Çıÿÿÿÿ8Øèƒ‹/
+H
+java:S59600"+Remove this assertion from production code.(ÕãÎÄ8ÿ¸”„‹/
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(´ Éğûÿÿÿÿ8Øèƒ‹/
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(ÓÎøÿÿÿÿ8Øèƒ‹/
+^
+java:S1128"<Remove this unused import 'co.com.swaglabs.pages.LoginPage'.(ŒÇâışÿÿÿÿ8¸­ıƒ‹/
+Z
+java:S1128"=Remove this unused import 'co.com.swaglabs.utils.Utilidades'.(À«“Ú8§Üãƒ‹/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(€¿™¦8Øèƒ‹/
+f
+java:S1128"DRemove this unused import 'org.openqa.selenium.support.PageFactory'.(çáëşÿÿÿÿ8“Ú¸„‹/

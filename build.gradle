@@ -1,0 +1,49 @@
+plugins {
+    id 'java'
+    id 'io.spring.dependency-management' version '1.0.1.RELEASE'
+}
+dependencyManagement {
+    imports {
+        mavenBom 'org.apache.logging.log4j:log4j-bom:2.14.1'
+    }
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'junit:junit:4.12'
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+    testCompile 'junit:junit:4.13.2'
+    testImplementation("io.github.bonigarcia:webdrivermanager:4.3.1")
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '6.10.2'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '6.10.2'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.3.1'
+
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    // https://mvnrepository.com/artifact/org.junit.vintage/junit-vintage-engine
+    testImplementation group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.7.1'
+
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.23'
+
+
+    // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    testImplementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    testImplementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
